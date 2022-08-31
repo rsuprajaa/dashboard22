@@ -10,7 +10,7 @@ const studentSchema = mongoose.Schema({
             type: Number,
             required: true,
       },
-      user: {
+      college_id: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'colleges'
       },
