@@ -1,5 +1,6 @@
 import express from 'express'
 import dotenv from 'dotenv'
+import cors from 'cors'
 import connectDB from './config/db.js'
 import {notFound, errorHandler} from './middleware/errorMiddleware.js'
 import collegeRoutes from './routes/collegeRoutes.js'
@@ -9,6 +10,8 @@ dotenv.config()
 connectDB()
 
 const app = express()
+
+app.use(cors())
 
 app.use('/api/colleges', collegeRoutes)
 app.use('/api/students', studentRoutes)

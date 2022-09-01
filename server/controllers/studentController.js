@@ -27,3 +27,8 @@ export const getStudentById = asyncHandler(async(req, res) => {
     const data = await studentModel.findById(req.params.id)
     res.status(200).json(data)
 })
+
+export const getStudentsByCollege = asyncHandler(async(req, res) => {
+    const data = await studentModel.find({college_id: req.params.id})
+    res.status(200).json(data)
+})
