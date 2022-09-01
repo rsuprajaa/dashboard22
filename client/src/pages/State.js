@@ -15,7 +15,7 @@ const State = () => {
     console.log(stateName)
     useEffect(()=>{
         const fetchItem = async()=>{
-            const result = await axios.get(`http://localhost:5000/api/colleges/find/location/${stateName}`)
+            const result = await axios.get(`api/colleges/find/location/${stateName}`)
             setState(result.data)
         }
         fetchItem()
