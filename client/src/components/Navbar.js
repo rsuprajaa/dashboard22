@@ -11,10 +11,10 @@ class Navbar extends Component {
     return (
       <nav className="menuBar" style={{display: 'flex'}}>
         <div className="logo" style = {{flex: '50%'}}>
-          <a href="https://oneshot-eight.vercel.app/">HOME</a>
+          <a href="https://oneshot-51jvc3d4o-supraja.vercel.app/">HOME</a>
         </div>
         <div style={{float: 'right', color: 'white'}}>
-          <a href="https://oneshot-eight.vercel.app/charts">Charts</a>
+          <a href="https://oneshot-51jvc3d4o-supraja.vercel.app/charts">Charts</a>
         </div>
       </nav>
     );
